@@ -5,10 +5,6 @@ function App() {
 
   return (
     <>
-      <div>hello   <FaHome /></div>
-      <div>hello world</div>
-      <p></p>
-
     </>
   )
 }
