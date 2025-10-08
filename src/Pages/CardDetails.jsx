@@ -3,15 +3,18 @@ import { useLoaderData, useParams } from "react-router";
 import downlode from '../assets/icon-downloads.png';
 import star from '../assets/icon-ratings.png';
 import like from '../assets/icon-review.png';
+import Chart from "./Chart";
+
+  
 const CardDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const singlecard = data.find((i) => i.id === parseInt(id));
-  // console.log(singleProduct)
-  const { image, size, title, ratingAvg,downloads,reviews } = singlecard;
+  const {ratings, image, size, title, ratingAvg,downloads,reviews,description } = singlecard;
+  
   return (
-    <div>
-      <div className="pb-5  flex flex-col sm:flex-row px-2 sm:px-5 md:px-15 pt-15">
+    <div className="px-2 sm:px-5 md:px-15 ">
+      <div className="pb-5  flex flex-col sm:flex-row pt-15">
         <img  className="mr-10 h-[350px] w-[350px] object-cover rounded" src={image} alt="" />
         <div>
           <div >
@@ -49,7 +52,11 @@ const CardDetails = () => {
         </div>
         
       </div>
-      
+      <Chart ratings={ratings} />
+      <div>
+        <h1 className="text-xl font-semibold">Description</h1>
+        <p className="text-lg text-gray-500">{description}</p>
+      </div>
     </div>
   );
 };
