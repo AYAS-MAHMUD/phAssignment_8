@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/ZRwTdT1S/apple-ich.jpg",
+    "title": "App Store",
+    "companyName": "Apple Inc.",
+    "id": 1,
+    "description": "The App Store is Apple’s official marketplace for iOS and iPadOS applications. It allows users to discover, download, and manage apps securely, providing updates, reviews, and curated recommendations for all Apple devices.",
+    "size": 200,
+    "reviews": 12500,
+    "ratingAvg": 4.8,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 8700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DfdVQpNM/google.png",
+    "title": "Google Play",
+    "companyName": "Google LLC",
+    "id": 2,
+    "description": "Google Play is the official Android store offering apps, games, movies, books, and more. It ensures secure app distribution, automatic updates, and user-friendly discovery features across millions of Android devices worldwide.",
+    "size": 180,
+    "reviews": 22000,
+    "ratingAvg": 4.6,
+    "downloads": 90000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 15200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/NgXB5PKp/youtube.jpg",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 3,
+    "description": "YouTube is the world’s largest video-sharing platform that lets users upload, view, and interact with videos. It provides entertainment, tutorials, education, and live streaming to billions of users globally.",
+    "size": 150,
+    "reviews": 50000,
+    "ratingAvg": 4.7,
+    "downloads": 200000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 31000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/gZLpr7mm/spotify.jpg",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 4,
+    "description": "Spotify is a global music streaming service offering millions of tracks, podcasts, and playlists. It allows users to discover, share, and enjoy audio content on mobile, desktop, and smart devices worldwide.",
+    "size": 120,
+    "reviews": 30000,
+    "ratingAvg": 4.5,
+    "downloads": 150000000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 16400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/FL7tmf41/facebook.jpg",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 5,
+    "description": "Facebook connects people globally through social networking. Users can share updates, photos, videos, and join communities while staying connected with friends, family, and brands in real-time.",
+    "size": 250,
+    "reviews": 40000,
+    "ratingAvg": 4.3,
+    "downloads": 200000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 14500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/1GxQ8nRH/instagram.jpg",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 6,
+    "description": "Instagram is a visual-first social media platform where users share photos, videos, and reels. It emphasizes creativity, trends, and global connections, appealing to individuals, creators, and brands alike.",
+    "size": 170,
+    "reviews": 35000,
+    "ratingAvg": 4.6,
+    "downloads": 180000000,
+    "ratings": [
+      { "name": "1 star", "count": 1800 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 18300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tMYSmNZy/twitter.jpg",
+    "title": "X (Twitter)",
+    "companyName": "X Corp.",
+    "id": 7,
+    "description": "X, formerly Twitter, is a microblogging and social interaction platform that allows users to share short messages, images, and videos, fostering conversations and real-time news updates across the world.",
+    "size": 130,
+    "reviews": 25000,
+    "ratingAvg": 4.1,
+    "downloads": 90000000,
+    "ratings": [
+      { "name": "1 star", "count": 3500 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/k2QdVQ3d/tiktok.jpg",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "id": 8,
+    "description": "TikTok is a short-form video sharing platform that empowers users to create, edit, and share creative videos with music, effects, and filters. It’s popular for trends, entertainment, and viral content.",
+    "size": 210,
+    "reviews": 38000,
+    "ratingAvg": 4.7,
+    "downloads": 250000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 2300 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 21700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nsCKD78w/netflix.jpg",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 9,
+    "description": "Netflix is a leading streaming platform offering thousands of movies, TV series, and documentaries. It provides personalized recommendations and supports offline viewing across multiple devices.",
+    "size": 300,
+    "reviews": 28000,
+    "ratingAvg": 4.5,
+    "downloads": 120000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 14700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/pvYPXPZ3/link.jpg",
+    "title": "LinkedIn",
+    "companyName": "Microsoft Corporation",
+    "id": 10,
+    "description": "LinkedIn is a professional networking platform where users build resumes, share insights, and connect with businesses. It’s widely used for job searching, recruitment, and career development worldwide.",
+    "size": 160,
+    "reviews": 12000,
+    "ratingAvg": 4.4,
+    "downloads": 80000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4npX1fBY/what.jpg",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 11,
+    "description": "WhatsApp is a messaging app offering text, voice, and video communication. It features end-to-end encryption, file sharing, group chats, and calls, connecting billions of users securely worldwide.",
+    "size": 90,
+    "reviews": 45000,
+    "ratingAvg": 4.8,
+    "downloads": 300000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 32300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/7Ng0j0sy/telegram.jpg",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 12,
+    "description": "Telegram is a cloud-based messaging platform known for speed and privacy. It supports large groups, channels, bots, and file sharing, making it popular for secure and community communication.",
+    "size": 95,
+    "reviews": 22000,
+    "ratingAvg": 4.6,
+    "downloads": 150000000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 11100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/bgD11psF/photo.jpg",
+    "title": "Google Photos",
+    "companyName": "Google LLC",
+    "id": 13,
+    "description": "Google Photos is a cloud storage service that automatically organizes and backs up photos and videos. It offers smart search, editing tools, and shared albums with easy cross-device access.",
+    "size": 110,
+    "reviews": 18000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 9400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/bjjR5pWp/zoom.png",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 14,
+    "description": "Zoom is a leading video conferencing platform used for meetings, webinars, and collaboration. It provides screen sharing, chat, and cloud recording, making it essential for remote work and education.",
+    "size": 140,
+    "reviews": 15000,
+    "ratingAvg": 4.4,
+    "downloads": 95000000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 5400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/G33zZs5y/canva.jpg",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "id": 15,
+    "description": "Canva is an online design platform that helps users create professional graphics, videos, and presentations with ease. It includes thousands of templates and supports collaboration for teams and individuals.",
+    "size": 190,
+    "reviews": 25000,
+    "ratingAvg": 4.8,
+    "downloads": 70000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 15800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Zz78GJhR/discord.jpg",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "id": 16,
+    "description": "Discord is a communication app for voice, video, and text chat, primarily used by gaming communities. It supports servers, channels, and integrations for streaming, studying, and collaboration.",
+    "size": 150,
+    "reviews": 27000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 15200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4ZW3YcLp/pinterest.png",
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "id": 17,
+    "description": "Pinterest is a visual discovery engine for ideas like recipes, home décor, and fashion. Users can create boards, pin images, and explore inspiration from millions of global creators.",
+    "size": 100,
+    "reviews": 16000,
+    "ratingAvg": 4.6,
+    "downloads": 90000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 9900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zhDfs40c/cloud.jpg",
+    "title": "Adobe Creative Cloud",
+    "companyName": "Adobe Inc.",
+    "id": 18,
+    "description": "Adobe Creative Cloud provides a suite of creative applications including Photoshop, Illustrator, and Premiere Pro. It enables designers and artists to collaborate, edit, and publish stunning digital projects efficiently.",
+    "size": 500,
+    "reviews": 14000,
+    "ratingAvg": 4.5,
+    "downloads": 60000000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 6800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/bRDJrQfd/amazon.jpg",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon.com, Inc.",
+    "id": 19,
+    "description": "Amazon Shopping allows users to buy products, track orders, and access Prime services. It offers millions of items, customer reviews, and secure payment options across multiple categories.",
+    "size": 230,
+    "reviews": 35000,
+    "ratingAvg": 4.6,
+    "downloads": 180000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 19400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/v68JFvwy/office.jpg",
+    "title": "Microsoft Office",
+    "companyName": "Microsoft Corporation",
+    "id": 20,
+    "description": "Microsoft Office is a productivity suite including Word, Excel, PowerPoint, and more. It enables users to create, edit, and collaborate on documents efficiently across desktop and mobile devices.",
+    "size": 450,
+    "reviews": 32000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2600 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 20600 }
+    ]
+  }
+]
