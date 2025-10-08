@@ -1,11 +1,13 @@
 import React from "react";
 import dnl from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
+import { Link } from "react-router";
 
 const AllCard = ({ i }) => {
-  const { image, size, title, ratingAvg } = i;
+  const { image, size, title, ratingAvg ,id} = i;
   return (
-    <div>
+    <Link to={`/CardDetails/${id}`}>
+        <div>
       {/* card */}
       <div className="p-[16px] rounded bg-white shadow-sm">
         <img className="rounded h-[316px] object-cover" src={image} alt="" />
@@ -22,6 +24,7 @@ const AllCard = ({ i }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
