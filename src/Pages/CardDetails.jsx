@@ -1,12 +1,21 @@
-import React from "react";
-import { useLoaderData, useParams } from "react-router";
+import React, { useContext, useState } from "react";
+import { Link, useLoaderData, useParams } from "react-router";
 import downlode from '../assets/icon-downloads.png';
 import star from '../assets/icon-ratings.png';
 import like from '../assets/icon-review.png';
 import Chart from "./Chart";
+import { additemtocarttolocalstorage } from "../../public/LocalStorage";
 
-  
+
 const CardDetails = () => {
+  const [isSelected, setSelected] = useState(false);
+
+
+  function handleselected (CardData){
+
+  additemtocarttolocalstorage(CardData)
+      setSelected(true);
+  }
   const data = useLoaderData();
   const { id } = useParams();
   const singlecard = data.find((i) => i.id === parseInt(id));
@@ -48,14 +57,17 @@ const CardDetails = () => {
               <h1 className="text-[40px] font-bold">{reviews/1000}K</h1>
             </div>
           </div>
-            <button className="px-10 btn bg-[#00D390] text-white mt-10">Install Now ({size}MB)</button>
+            <button disabled={isSelected}
+            onClick={() => {handleselected(singlecard)}}
+
+              className="px-10 btn bg-[#00D390] text-white mt-10"> {isSelected ? "Installed" : `Install Now (${size}MB)`}</button>
         </div>
         
       </div>
       <Chart ratings={ratings} />
       <div>
         <h1 className="text-xl font-semibold">Description</h1>
-        <p className="text-lg text-gray-500">{description}</p>
+        <p className="text-lg text-gray-500 pb-10">{description}</p>
       </div>
     </div>
   );

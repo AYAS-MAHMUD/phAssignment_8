@@ -24,7 +24,8 @@ export const router = createBrowserRouter([
             },
             {
                 path : 'install',
-                Component : Install
+                Component : Install,
+                
             },
             {
                 path : `CardDetails/:id`,

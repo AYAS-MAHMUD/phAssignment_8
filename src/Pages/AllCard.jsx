@@ -10,7 +10,7 @@ const AllCard = ({ i }) => {
         <div>
       {/* card */}
       <div className="p-[16px] rounded bg-white shadow-sm">
-        <img className="rounded h-[316px] object-cover" src={image} alt="" />
+        <img className="rounded h-[316px] object-cover hover:scale-103 transition ease-in-out" src={image} alt="" />
         <h1 className="text-lg my-2 font-semibold">{title}</h1>
         <div className="flex justify-between">
           <h1 className="flex gap-1 justify-center items-center bg-green-50 text-green-700 font-semibold p-2 rounded">

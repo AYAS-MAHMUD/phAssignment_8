@@ -3,7 +3,7 @@ import hero from '../assets/hero.png'
 import { FaGooglePlay } from "react-icons/fa";
 import { FaAppStoreIos } from "react-icons/fa";
 import FirstData from "./FirstData";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 
 
@@ -78,7 +78,7 @@ const First = ({data}) => {
         
         </div>
         <div className="flex justify-center mt-10 b-15" >
-            <Link  to='/apps' className="px-10 btn bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] text-white">Show All</Link>
+            <NavLink   to='/apps' className="px-10 btn bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] text-white mb-15">Show All</NavLink>
         </div>
 
       </div>
