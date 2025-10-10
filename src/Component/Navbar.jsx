@@ -1,6 +1,9 @@
 import { FaGithub } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
 import logo from "../assets/logo.png";
+import { FaHome } from "react-icons/fa";
+import { FaAppStoreIos } from "react-icons/fa";
+import { MdOutlineInstallDesktop } from "react-icons/md";
 
 const Navbar = () => {
 
@@ -32,13 +35,13 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
           <li >
-            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/'><FaHome className="text-lg"/>Home</NavLink>
           </li>
           <li>
-            <NavLink to='/apps'>Apps</NavLink>
+            <NavLink to='/apps'><FaAppStoreIos className="text-lg" />Apps</NavLink>
           </li>
           <li>
-            <NavLink to='/install'>Installation</NavLink>
+            <NavLink to='/install'><MdOutlineInstallDesktop className="text-lg" />Installation</NavLink>
           </li>
           </ul>
         </div>
@@ -55,13 +58,13 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-2">
           <li >
-            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/'><FaHome className="text-lg"/>Home</NavLink>
           </li>
           <li >
-            <NavLink to='/apps'>Apps</NavLink>
+            <NavLink to='/apps'><FaAppStoreIos className="text-lg" />Apps</NavLink>
           </li>
           <li >
-            <NavLink to='/install'>Installation</NavLink>
+            <NavLink to='/install'><MdOutlineInstallDesktop className="text-lg" />Installation</NavLink>
           </li>
         </ul>
       </div>

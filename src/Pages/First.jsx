@@ -33,13 +33,13 @@ const First = ({data}) => {
       <div className="flex justify-center gap-5 mb-7">
         <a
           href="https://play.google.com/store/games?hl=en"
-          className="btn border-1 border-gray-300 "
+          className="btn shadow-lg  text-lg px-5 py-3"
         >
-          <FaGooglePlay className="text-xl text-blue-400" /> Google Play
+          <FaGooglePlay className="text-2xl text-blue-400" /> Google Play
         </a>
         <a
           href="https://www.apple.com/app-store/"
-          className="btn border-1 border-gray-300"
+          className="btn shadow-lg  text-lg px-5 py-3"
         >
           <FaAppStoreIos className="text-2xl text-blue-400" /> App Store
         </a>

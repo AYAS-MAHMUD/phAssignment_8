@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { Link, useLoaderData } from "react-router";
 import AllCard from "./AllCard";
 import notfound from '../assets/App-Error.png'
-
+import { useNavigation } from "react-router";
 const Apps = () => {
+    const navigation = useNavigation()
+    const inNavigating = Boolean(navigation.location)
+
   const data = useLoaderData();
   const [search, setSearch] = useState("");
   const term = search.trim().toLocaleLowerCase();
@@ -38,7 +41,9 @@ const Apps = () => {
       </div>
       {searchProduct.length > 0 ? (
         <div className="pb-10 px-2 sm:px-5 md:px-15 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+          {inNavigating && <div className='flex justify-center item pt-10'><span className="loading loading-dots loading-xl "></span></div>}
           {searchProduct.map((i) => (
+            
             <AllCard key={i.id} i={i}></AllCard>
           ))}
         </div>

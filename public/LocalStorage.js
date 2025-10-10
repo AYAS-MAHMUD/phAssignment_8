@@ -12,10 +12,14 @@ const saveCartTolocalStorage = cart=>{
     localStorage.setItem('cart',cartSringified);
 }
 const additemtocarttolocalstorage =(id)=>{
+    console.log(id) 
     const cart = getcartfromlocalStoragne();
-    // cart.push(id);
-    const newcart = [...cart,id];
-    saveCartTolocalStorage(newcart)
+    if (cart.includes(id)) {    
+        console.log(id)
+    }
+    const newcart = [...cart, id];
+    saveCartTolocalStorage(newcart);
+
 }
 
 export {getcartfromlocalStoragne,additemtocarttolocalstorage , saveCartTolocalStorage}

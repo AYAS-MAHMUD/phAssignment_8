@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link, useLoaderData, useParams } from "react-router";
+import { Link, useLoaderData, useNavigation, useParams } from "react-router";
 import downlode from "../assets/icon-downloads.png";
 import star from "../assets/icon-ratings.png";
 import like from "../assets/icon-review.png";
@@ -16,6 +16,21 @@ const CardDetails = () => {
     setSelected(true);
   }
   const data = useLoaderData();
+
+  const navigation = useNavigation(); // loader state check করার জন্য
+
+  // যখন data load হচ্ছে তখন "Loading..." দেখাও
+  if (navigation.state === "loading") {
+    return (
+      <div className="flex justify-center items-center h-screen text-xl font-semibold text-blue-600">
+        aaaa...
+      </div>
+    );
+  }
+
+
+
+
   const { id } = useParams();
   const singlecard = data.find((i) => i.id === parseInt(id));
   const {
