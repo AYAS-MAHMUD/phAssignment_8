@@ -1,12 +1,11 @@
-import React, { useContext, useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
 
 
-    const [togglestatus,settogglestatus] = useState('home')
+
   return (
     <div className="navbar bg-base-100 shadow-sm px-2 sm:px-5 md:px-15">
       <div className="navbar-start">
@@ -32,14 +31,14 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-          <li onClick={()=>settogglestatus('home')} className={`font-semibold  ${togglestatus=='home' && 'bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] text-white rounded'} `}>
-            <Link to='/'>Home</Link>
+          <li >
+            <NavLink to='/'>Home</NavLink>
           </li>
-          <li onClick={()=>settogglestatus('apps')} className={`font-semibold  ${togglestatus=='apps' && 'bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] text-white rounded'} `}>
-            <Link to='/apps'>Apps</Link>
+          <li>
+            <NavLink to='/apps'>Apps</NavLink>
           </li>
-          <li onClick={()=>settogglestatus('install')} className={`font-semibold  ${togglestatus=='install' && 'bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] text-white rounded'} `}>
-            <Link to='/install'>Installation</Link>
+          <li>
+            <NavLink to='/install'>Installation</NavLink>
           </li>
           </ul>
         </div>
@@ -55,14 +54,14 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-2">
-          <li onClick={()=>settogglestatus('home')} className={`font-semibold  ${togglestatus=='home' && 'bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] text-white rounded'} `}>
-            <Link to='/'>Home</Link>
+          <li >
+            <NavLink to='/'>Home</NavLink>
           </li>
-          <li onClick={()=>settogglestatus('apps')} className={`font-semibold  ${togglestatus=='apps' && 'bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] text-white rounded'} `}>
-            <Link to='/apps'>Apps</Link>
+          <li >
+            <NavLink to='/apps'>Apps</NavLink>
           </li>
-          <li onClick={()=>settogglestatus('install')} className={`font-semibold  ${togglestatus=='install' && 'bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] text-white rounded'} `}>
-            <Link to='/install'>Installation</Link>
+          <li >
+            <NavLink to='/install'>Installation</NavLink>
           </li>
         </ul>
       </div>

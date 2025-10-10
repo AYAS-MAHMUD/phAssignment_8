@@ -1,14 +1,33 @@
 import React, { useContext, useEffect, useState } from "react";
-import { getcartfromlocalStoragne } from "../../public/LocalStorage";
+import { getcartfromlocalStoragne,saveCartTolocalStorage } from "../../public/LocalStorage";
 import { FaDownload } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import { toast } from "react-toastify";
 const Install = () => {
-  // getcartfromlocalStoragne.map(i=>console.log(i))
+  const [sortOrder,setSortOrder] = useState('none')
   const [installApp, setinstallApp] = useState([]);
   useEffect(() => {
     const data = getcartfromlocalStoragne();
     setinstallApp(data);
   }, []);
+  
+  const sortedItem =()=>{
+    if(sortOrder==='size'){
+      return [...installApp].sort((a,b)=>a.size - b.size)
+    }else if(sortOrder==='none'){
+      return [...installApp].sort((a,b)=>a.downloads - b.downloads)
+    }else{
+      return installApp
+    }
+  }
+  const handleRemove =(id)=>{
+    const existing = getcartfromlocalStoragne()
+    let updatelist = existing.filter(p => p.id !== id)
+    setinstallApp(updatelist)
+    saveCartTolocalStorage(updatelist)
+    toast("Remove App",{position : "top-center",autoClose:500})
+    
+  }
   return (
     <div className="px-2 sm:px-5 md:px-15">
       <div>
@@ -22,17 +41,18 @@ const Install = () => {
       <div className="flex justify-between">
         <h1 className="font-semibold text-xl text-gray-600">({installApp.length}) Apps Found</h1>
         <div className="dropdown dropdown-top dropdown-end">
-  <div tabIndex={0} role="button" className="btn m-1">Click ⬆️</div>
-  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-    <li><a>Item 1</a></li>
-    <li><a>Item 2</a></li>
-  </ul>
+      <label className="form-control w-full max-w-sm">
+        <select className="select select-bordered" value={sortOrder} onClick={(e)=>setSortOrder(e.target.value)}>
+          <option value="none">Sort By Download</option>
+          <option value="size">Sort By Size</option>
+        </select>
+      </label>
 </div>
       </div>
 
       <div className="">
         {installApp.length > 0 ? (
-          installApp.map((app) => (
+          sortedItem().map((app) => (
             <div
               key={app.id}
               className="flex items-center my-5 bg-white  justify-between   rounded-lg p-3 shadow"
@@ -52,7 +72,7 @@ const Install = () => {
                   </div>
                 </div>
               </div>
-              <button className="btn bg-green-400 text-white">Uninstall</button>
+              <button onClick={()=>handleRemove(app.id)} className="btn bg-green-400 text-white">Uninstall</button>
             </div>
           ))
         ) : (

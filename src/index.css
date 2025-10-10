@@ -4,3 +4,8 @@
 /* .toggle-btn{
     @apply font-semibold  bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] bg-clip-text text-transparent;
 } */
+
+
+a.active {
+  @apply bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] text-white ;
+}

@@ -1,5 +1,6 @@
 const getcartfromlocalStoragne = ()=>{
     const storedcartstring = localStorage.getItem('cart'); //local teke data nici
+    
     if(storedcartstring){
         const storedcart = JSON.parse(storedcartstring); //json teke parse convert
         return storedcart; // data takle [{id:1},{id:2}] dibe 
